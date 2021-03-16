@@ -1,0 +1,52 @@
+.container-presentation{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.section-icone{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 20vw;
+    align-items: center;
+}
+
+.container-picto{
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    align-items: center;
+}
+
+.titre-icones{
+    font-size: 20px;
+    font-weight: bold;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+}
+
+.material-icons{
+    color : #F76C6C;
+
+}
+
+p{
+    display: block;
+    line-height: 30px;
+}
+
+.titre-icones{
+    text-align: center;
+    font-weight: bolder;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+
