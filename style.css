@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-image: url(Assets/meadow.jpg);
+    background-size: cover;
+    padding: 10px 30px 30px 40px;
+    text-align: center;
+    height: 15vh;
+}
+
+.S-photos {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+#Sophie {
+    height: 10vh;
+    border-radius: 50%;
+}
+
+#Aline {
+    height: 10vh;
+    border-radius: 50%;
+}
+
+#Kevin {
+    height: 10vh;
+    border-radius: 50%;
+    
+}
+
+#Gregory {
+    height: 10vh;
+    border-radius: 50%;
+}
