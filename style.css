@@ -6,6 +6,8 @@ body{
     display: flex;
     justify-content: center;
     gap: 3vw;
+    padding-right: 3vw;
+    padding-left: 3vw;
 }
 
 .section-icone{
@@ -28,11 +30,11 @@ body{
     font-weight: bold;
     margin-block-start: 1rem;
     margin-block-end: 1rem;
+    white-space: nowrap;
 }
 
 .material-icons{
     color : #F76C6C;
-
 }
 
 p{
@@ -46,16 +48,17 @@ p{
 }
 
 
-@media all and (max-width: 414px){
+@media all and (max-width: 568px) {
     .container-presentation {
         display: block;
         text-align: center;
     }
-    .section-icone{
+
+    .section-icone {
         display: block;
         text-align: center;
     }
-
+}
 
 
 
