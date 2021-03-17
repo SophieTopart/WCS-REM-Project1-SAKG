@@ -1,7 +1,7 @@
-const Sophie = document.querySelector("#Sophie")
-const Aline = document.querySelector("#Aline")
-const Kevin = document.querySelector("#Kevin")
-const Gregory = document.querySelector("#Gregory")
+const Sophie = document.querySelector(".S-Sophie")
+const Aline = document.querySelector(".S-Aline")
+const Kevin = document.querySelector(".S-Kevin")
+const Gregory = document.querySelector(".S-Gregory")
 
 Sophie.onclick = function (){
     document.location.href="Sophie.html"
@@ -19,6 +19,3 @@ Gregory.onclick = function (){
     document.location.href="Gregory.html"
 }
 
-Sophie.addEventListener("mouseover", function(){
-
-})
