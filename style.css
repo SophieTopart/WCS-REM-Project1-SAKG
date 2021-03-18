@@ -273,6 +273,7 @@ p{
     }
 }
 
+
 .flex-container {
     display: flex;
     justify-content: space-between;
@@ -304,7 +305,6 @@ ul li {
 
 li {
     margin-top: 30px;
-
 }
 
 @media all and (max-width:568px){
@@ -361,6 +361,7 @@ body{
     padding: 0%;
     margin: 0%;
 }
+
 .boxk3{
     border: solid 1px black;
     height: 250px;
