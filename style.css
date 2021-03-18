@@ -273,6 +273,7 @@ p{
     }
 }
 
+<<<<<<< HEAD
 .flex-container {
     display: flex;
     justify-content: space-between;
@@ -304,3 +305,8 @@ ul li {
 
 li {
     margin-top: 30px;
+=======
+
+
+
+>>>>>>> bab6bc8831144e99727d033276955d3bd0f0bd56
