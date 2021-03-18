@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-image: url(Assets/herbe.jpg);
+    background-size: cover;
+    padding: 10px 30px 30px 40px;
+    text-align: center;
+    color: white;
+    height: 30vh;
+}
+
+.S-photos {
+    display: flex;
+    justify-content: space-around;
+    padding: 3em;
+}
+
+.S-Sophie {
+    height: 20vh;
+    border-radius: 50%;
+}
+
+.S-Aline:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.S-Gregory:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.S-Kevin:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.S-Sophie:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.S-Aline {
+    height: 20vh;
+    border-radius: 50%;
+}
+
+.S-Kevin {
+    height: 20vh;
+    border-radius: 50%;
+}
+
+.S-Gregory {
+    height: 20vh;
+    border-radius: 50%;
+}
+
+/*Pages perso*/
+
+.HeaderPages {
+    height: 20vh;
+}
+
+
+.S-SophiePages {
+    height: 10vh;
+    border-radius: 50%;
+}
+
+.S-AlinePages:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.S-GregoryPages:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.S-KevinPages:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.S-SophiePages:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.S-AlinePages {
+    height: 10vh;
+    border-radius: 50%;
+}
+
+.S-KevinPages {
+    height: 10vh;
+    border-radius: 50%;
+}
+
+.S-GregoryPages {
+    height: 10vh;
+    border-radius: 50%;
+}
+
+.bloc-container {
+    display: grid;
+    text-align: center;
+    margin: 60px 20px 10px 20px;
+    height: 100vh;
+    grid-gap: 40px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.bloc {
+    padding: 0.5em;
+    background-color: rgb(121, 117, 113);
+    border: 2px solid black;
+}
+
+.element-1 {
+    opacity: 0;
+}
+
+.element-3 {
+    opacity: 0;
+}
+
+.element-5 {
+    opacity: 0;
+}
+
+.element-7 {
+    opacity: 0;
+}
+
+.element-8{
+    border-radius: 50%;
+    background-image: url(Assets/Sophie.jpg);
+    background-size: 100%;
+}
+
+.element-9 {
+    opacity: 0;
+}
+
+.element-11 {
+    opacity: 0;
+}
+
+.element-13 {
+    background-color: white;
+    border: none;
+}
+
+.element-15 {
+    opacity: 0;
+}
+
+/*Responsive*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .S-Aline {
+        height: 12vh;
+    }
+
+    .S-Kevin {
+        height: 12vh;
+    }
+
+    .S-Gregory {
+        height: 12vh;
+    }
+
+    .S-Sophie {
+        height: 12vh;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .S-photos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3em;
+    }
+
+    .S-Aline {
+        height: 8vh;
+        width: 8vh;
+    }
+
+    .S-Kevin {
+        height: 8vh;
+        width: 8vh;
+    }
+
+    .S-Gregory {
+        height: 8vh;
+        width: 8vh;
+    }
+
+    .S-Sophie {
+        height: 8vh;
+        width: 8vh;
+    }
+
+    header {
+        height: 50vh;
+    }
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.container-presentation{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    padding-right: 3vw;
+    padding-left: 3vw;
+}
+
+.section-icone{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container-picto{
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    align-items: center;
+}
+
+.titre-icones{
+    font-size: 20px;
+    font-weight: bold;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    white-space: nowrap;
+}
+
+.material-icons{
+    color : #F76C6C;
+}
+
+p{
+    display: block;
+    line-height: 30px;
+}
+
+.titre-icones{
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+@media all and (max-width: 568px) {
+    .container-presentation {
+        display: block;
+        text-align: center;
+    }
+
+    .section-icone {
+        display: block;
+        text-align: center;
+    }
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    width: 100%;
+    margin: 1px 1px;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 2px 5px #F76C6C, -0.2em 0 .4em #0975bf
+}
+
+.logo2 {
+    margin-right: 20px;
+
+}
+
+.flex-container2 {
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    width: 100%;
+    margin: 1px 1px;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 2px 5px gray, -0.2em 0 .4em #0975bf
+}
+
+ul li {
+    display: inline-block;
+}
+
+li {
+    margin-top: 30px;
