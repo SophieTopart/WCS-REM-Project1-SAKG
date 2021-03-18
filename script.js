@@ -1,21 +1,21 @@
-const Sophie = document.querySelector(".S-Sophie")
-const Aline = document.querySelector(".S-Aline")
-const Kevin = document.querySelector(".S-Kevin")
-const Gregory = document.querySelector(".S-Gregory")
+const Sophie = document.querySelector(".lienSophie")
+const Aline = document.querySelector(".lienAline")
+const Kevin = document.querySelector(".lienKevin")
+const Gregory = document.querySelector(".lienGregory")
 
 Sophie.onclick = function (){
-    document.location.href="Sophie.html"
+    document.location.href="pageSophie.html"
 }
 
 Aline.onclick = function (){
-    document.location.href="Aline.html"
+    document.location.href="pageAline.html"
 }
 
 Kevin.onclick = function (){
-    document.location.href="Kevin.html"
+    document.location.href="pageKevin.html"
 }
 
 Gregory.onclick = function (){
-    document.location.href="Gregory.html"
+    document.location.href="pageGregory.html"
 }
 
