@@ -19,3 +19,6 @@ Gregory.onclick = function (){
     document.location.href="Gregory.html"
 }
 
+const goToWilders = () => {
+    document.location.href = "#wilders";
+}
