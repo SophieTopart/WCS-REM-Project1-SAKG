@@ -4,18 +4,18 @@ const Kevin = document.querySelector(".lienKevin")
 const Gregory = document.querySelector(".lienGregory")
 
 Sophie.onclick = function (){
-    document.location.href="pageSophie.html"
+    document.location.href="Sophie.html"
 }
 
 Aline.onclick = function (){
-    document.location.href="pageAline.html"
+    document.location.href="Aline.html"
 }
 
 Kevin.onclick = function (){
-    document.location.href="pageKevin.html"
+    document.location.href="Kevin.html"
 }
 
 Gregory.onclick = function (){
-    document.location.href="pageGregory.html"
+    document.location.href="Gregory.html"
 }
 
