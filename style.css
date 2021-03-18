@@ -273,6 +273,40 @@ p{
     }
 }
 
+<<<<<<< HEAD
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    width: 100%;
+    margin: 1px 1px;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 2px 5px #F76C6C, -0.2em 0 .4em #0975bf
+}
+
+.logo2 {
+    margin-right: 20px;
+
+}
+
+.flex-container2 {
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    width: 100%;
+    margin: 1px 1px;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 2px 5px gray, -0.2em 0 .4em #0975bf
+}
+
+ul li {
+    display: inline-block;
+}
+
+li {
+    margin-top: 30px;
+=======
 
 
 
+>>>>>>> bab6bc8831144e99727d033276955d3bd0f0bd56
