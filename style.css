@@ -118,18 +118,6 @@ p{
     padding-bottom: 6vh;
 }
 
-.bouton-contact {
-    margin-top: 2vh;
-    border: 0;
-    background-color: #0671b2;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    padding: 6px 10px;
-    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
-    border-radius: 4px;
-}
-
 .boxk1{
     border: solid 1px black;
     height: 250px;
