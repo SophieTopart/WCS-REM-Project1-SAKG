@@ -92,7 +92,7 @@ p{
     align-items: center;
     width: auto;
     height: 300px;
-    background-image: url(https://images6.alphacoders.com/542/thumb-1920-542624.jpg);
+    background-image: url(https://initiate.alphacoders.com/images/102/cropped-1920-1080-1029042.jpg?5283);
     background-size: cover;
 }
 .picturesk{
@@ -103,8 +103,8 @@ p{
     text-align: center;
     padding: 10%;
     font-size: 40px;
-    text-shadow: 1px 1px 2px black, 0 0 2em white, 0 0 0.6em black;
-    color:white;
+    text-shadow:4px 4px 4px black, 0 0 8em white, 0 0 0.9em black;
+    color:whitesmoke;
     font-kerning: normal;
     margin: 8%;
     letter-spacing: 12px;
