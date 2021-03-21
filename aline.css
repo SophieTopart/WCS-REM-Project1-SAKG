@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    height: 100px;
+    padding: 10px;
+}
+
+.header-aline {
+    display: flex;
+}
+
+.logo-AKGS {
+    height: 100px;
+    width: 100px;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.logo-WCS {
+    width: 100px;
+    height: 100px;
+}
+
+.page-perso-aline {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.bloc-identite-aline {
+    display: flex;
+    margin: 47px;
+}
+
+.identite-aline {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+q {
+    font-style: italic;
+    font-size: 15px;
+}
+
+
+.logo-html {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-css {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-js {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-react {
+    width: 50px;
+    height: 50px;
+}
+
+.photo-aline {
+    display: flex;
+    padding: 30px;
+}
+
+.bloc-presentation-aline {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 5vh;
+    margin: 47px;
+}
+
+.bloc-texte-image {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    align-items: center;
+}
+
+.image-woman {
+    width: 200px;
+    height: 131px;
+
+}
+
+.bloc-texte {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.image-laptop {
+    width: 200px;
+    height: 131px;
+}
+
+.image-gym {
+    width: 200px;
+    height: 121px;
+}
+
+.image-fusee {
+    width: 150px;
+    height: 150px;
+}
+
+.haut-de-page {
+    font-size: 30px !important;
+}
+
+.bloc-contact-aline {
+    display: flex;
+    margin: 47px;
+    justify-content: space-between;
+}

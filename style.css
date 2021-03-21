@@ -9,10 +9,13 @@ header {
     align-items: center;
     background-image: url(Assets/meadow.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     padding: 10px 30px 30px 40px;
     color: white;
     height: 300px;
     text-shadow: 1px 1px 2px black, 0 0 2em white, 0 0 0.6em black;
+    text-align: center;
 }
 
 .photosBandeau {
@@ -31,31 +34,31 @@ header {
 
 .photosIndiv:hover {
     transform: scale(1.3);
-    cursor: pointer;   
+    cursor: pointer;
 }
 
-body{
+body {
     font-family: 'Raleway', sans-serif;
 }
 
-.container-presentation{
+.container-presentation {
     display: flex;
     justify-content: center;
     gap: 3vw;
     padding-right: 3vw;
     padding-left: 3vw;
-    margin-top: 6vh ;
-    margin-bottom: 6vh ;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
 }
 
-.section-icone{
+.section-icone {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
-.container-picto{
+.container-picto {
     display: flex;
     justify-content: center;
     margin-top: 1vw;
@@ -63,7 +66,7 @@ body{
     align-items: center;
 }
 
-.titre-icones{
+.titre-icones {
     font-size: 20px;
     font-weight: bold;
     margin-block-start: 1rem;
@@ -71,21 +74,21 @@ body{
     white-space: nowrap;
 }
 
-.material-icons{
-    color : #0671b2;
+.material-icons {
+    color: #0671b2;
 }
 
-p{
+p {
     display: block;
     line-height: 30px;
 }
 
-.titre-icones{
+.titre-icones {
     text-align: center;
     font-weight: bolder;
 }
 
-.picturesBigk{
+.picturesBigk {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,32 +96,36 @@ p{
     width: auto;
     height: 300px;
     background-image: url(Assets/chemin.jpg);
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
 }
-.picturesk{
+
+.picturesk {
     width: auto;
     height: 50%;
 }
-.h2k{
+
+.h2k {
     text-align: center;
     padding: 10%;
     font-size: 40px;
-    text-shadow:4px 4px 4px black, 0 0 8em white, 0 0 0.9em black;
-    color:whitesmoke;
+    text-shadow: 4px 4px 4px black, 0 0 8em white, 0 0 0.9em black;
+    color: whitesmoke;
     font-kerning: normal;
     margin: 8%;
     letter-spacing: 12px;
 }
 
-.title2k{
+.title2k {
     text-align: center;
-    color:black;
+    color: black;
     width: auto;
     padding-top: 6vh;
     padding-bottom: 6vh;
 }
 
-.boxk1{
+.boxk1 {
     border: solid 1px black;
     height: 250px;
     width: 250px;
@@ -127,7 +134,8 @@ p{
     margin: 0;
     align-items: baseline;
 }
-.boxk2{
+
+.boxk2 {
     border: solid 1px black;
     height: 250px;
     width: 250px;
@@ -136,7 +144,7 @@ p{
     margin: 0%;
 }
 
-.boxk3{
+.boxk3 {
     border: solid 1px black;
     height: 250px;
     width: 250px;
@@ -149,7 +157,6 @@ p{
     display: flex;
     justify-content: space-between;
     height: 110px;
-    width: 100%;
     margin: 1px 1px;
 }
 
@@ -162,7 +169,6 @@ p{
     display: flex;
     justify-content: space-between;
     height: 110px;
-    width: 100%;
     margin: 1px 1px;
 }
 
@@ -191,7 +197,7 @@ li {
 
 .photosPages:hover {
     transform: scale(1.3);
-    cursor: pointer;   
+    cursor: pointer;
 }
 
 .blocContainer {
@@ -201,29 +207,29 @@ li {
     height: 100vh;
     grid-gap: 40px;
     grid-template-columns: repeat(5, 1fr);
-  }
+}
 
-  .bloc {
+.bloc {
     padding: 0.5em;
     background-color: rgb(121, 117, 113);
     border: 2px solid black;
-  }
-  
-  .noDisplay {
+}
+
+.noDisplay {
     opacity: 0;
-  }  
+}
 
-  .elementPhoto {
-      border-radius: 50%;
-      background-image: url(Assets/Sophie.jpg);
-      background-size: 100%;
-  }
+.elementPhoto {
+    border-radius: 50%;
+    background-image: url(Assets/Sophie.jpg);
+    background-size: 100%;
+}
 
-  .elementNom {
+.elementNom {
     background-color: lightgrey;
     border: none;
-  }
-  
+}
+
 
 /*Responsive*/
 
@@ -235,24 +241,24 @@ li {
 
 @media (max-width: 767px) {
     .photosBandeau {
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 3em;
-}
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 3em;
+    }
 
     .photosIndiv {
-    height: 8vh;
-    width: 8vh;
-}
+        height: 8vh;
+        width: 8vh;
+    }
 
     .photosPages {
-    height: 8vh;
-    width: 8vh;
+        height: 8vh;
+        width: 8vh;
     }
 
     header {
-    height: 50vh;
-}
+        height: 50vh;
+    }
 }
 
 @media all and (max-width: 568px) {
@@ -271,6 +277,6 @@ li {
     }
 }
 
-
-
-
+.haut-de-page {
+    font-size: 30px !important;
+}
