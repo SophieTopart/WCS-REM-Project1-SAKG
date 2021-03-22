@@ -211,8 +211,8 @@ li {
 
 .bloc {
     padding: 0.5em;
-    background-color: rgb(121, 117, 113);
-    border: 2px solid black;
+    background-color: white);
+    
 }
 
 .noDisplay {
@@ -226,8 +226,8 @@ li {
 }
 
 .elementNom {
-    background-color: lightgrey;
-    border: none;
+    background-color: white;
+   
 }
 
 
