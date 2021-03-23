@@ -205,14 +205,20 @@ li {
     text-align: center;
     margin: 60px 20px 10px 20px;
     height: 100vh;
-    grid-gap: 40px;
+    grid-gap: 100px;
     grid-template-columns: repeat(5, 1fr);
+    background-image: url(https://images6.alphacoders.com/568/thumb-1920-568500.jpg);
+    width: 100%;
+    
 }
 
 .bloc {
     padding: 0.5em;
-    background-color: rgb(121, 117, 113);
+    background-color: none;
     border: 2px solid black;
+    border: 5px outset rgb(255, 255, 255);
+    height: 200px;
+    width: 200px;
 }
 
 .noDisplay {
@@ -221,13 +227,16 @@ li {
 
 .elementPhoto {
     border-radius: 50%;
-    background-image: url(Assets/Sophie.jpg);
+    background-image: url(Assets/Kevin.jpeg);
     background-size: 100%;
 }
 
 .elementNom {
-    background-color: lightgrey;
-    border: none;
+    background-color: none;
+    border-style: double;
+    border-radius: 5% 60% 5%;
+    height: 10%;
+    border: 5px outset rgb(89, 177, 228);
 }
 
 
