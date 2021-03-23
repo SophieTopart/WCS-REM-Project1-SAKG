@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="style-aline.css" type="text/css">
+    <link rel="stylesheet" href="kevin.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
@@ -63,32 +64,23 @@
 
         <div class="bloc noDisplay"></div>
 
-        <div class="bloc elementPhoto">
+<!--        <div class="bloc elementPhoto">-->
 
-            <form id="formulaire-contact">
-                <h2>Envoyez-moi un message</h2>
+            <figure class="bloc elementPhoto elementPhotoAline">
 
-                <div class="champ-formulaire">
+                <img src="Assets/Aline.jpeg" alt="photo-aline" />
 
-                    <input type="texte" name="nom" class="style-champ" required="required" placeholder="Votre nom">
-                </div>
+                <figcaption>
+                    <h3>Contactez-moi !</h3>
+                </figcaption>
 
-                <div class="champ-formulaire">
-                    <input type="email" name="email" class="style-champ" required="required" placeholder="Votre email">
-                </div>
+                <a href="#"></a>
 
-                <div class="champ-formulaire">
-                    <textarea id="message" class="style-champ" required="required" placeholder="Votre message"
-                              rows="8"></textarea>
-                </div>
 
-                <div class="champ-formulaire">
+            </figure>
 
-                    <input type="submit" name="submit" class="bouton-envoi" value="Envoyer">
-                </div>
 
-            </form>
-        </div>
+<!--        </div>-->
 
         <div class="bloc noDisplay"></div>
 
@@ -114,8 +106,32 @@
 
         <div class="bloc noDisplay"></div>
     </div>
-       
+    <form id="formulaire-contact" style="display: none">
+        <h2>Envoyez-moi un message</h2>
+
+        <div class="champ-formulaire">
+
+            <input type="texte" name="nom" class="style-champ" required="required" placeholder="Votre nom">
+        </div>
+
+        <div class="champ-formulaire">
+            <input type="email" name="email" class="style-champ" required="required" placeholder="Votre email">
+        </div>
+
+        <div class="champ-formulaire">
+                    <textarea id="message" class="style-champ" required="required" placeholder="Votre message"
+                              rows="8"></textarea>
+        </div>
+
+        <div class="champ-formulaire">
+
+            <input type="submit" name="submit" class="bouton-envoi" value="Envoyer">
+        </div>
+
+    </form>
 <script type="text/javascript" src="script.js"></script>             
 
 </body>
 </html>
+
+

@@ -24,18 +24,12 @@
 
 .bloc {
     padding: 0.5em;
-    background-color: white);
+    background-color: white;
 
 }
 
 .noDisplay {
     opacity: 0;
-}
-
-.elementPhoto {
-    border-radius: 50%;
-    background-image: url(Assets/Aline.jpeg);
-    background-size: 100%;
 }
 
 .elementNom {
@@ -77,4 +71,15 @@
     border-color: #0671b2;
     outline: none;
     box-shadow: none;
+}
+
+.elementPhotoAline{
+    width: 200px !important;
+    height: 200px !important;
+    border: none !important;
+    padding: 0 !important;
+    min-width: 200px !important;
+    max-width: 200px !important;
+    border-radius: 0 !important;
+    background-image: none !important;
 }
