@@ -74,27 +74,21 @@
         <h2>Quel a été mon parcours ?</h2></br>
         <p>Depuis la fin de mes études, j'ai notamment fait carrière dans le journalisme, l'enseignement et dans la
             relation clientèle.</p>
+
     </div>
 
     <div class="bloc noDisplay"></div>
 
-    <!--        <div class="bloc elementPhoto">-->
+    <figure id="bouton-cta" class="bloc elementPhoto elementPhotoAline">
 
-    <figure class="bloc elementPhoto elementPhotoAline">
-
-        <img src="Assets/Aline.jpeg" alt="photo-aline"/>
+        <img class="photo-aline" src="Assets/Aline.jpeg" alt="photo-aline"/>
 
         <figcaption>
             <h3>Contactez-moi !</h3>
         </figcaption>
 
-        <a href="#formulaire"></a>
-
 
     </figure>
-
-
-    <!--        </div>-->
 
     <div class="bloc noDisplay"></div>
 
@@ -123,37 +117,40 @@
 
     <div class="bloc noDisplay"></div>
 </div>
+    <div id="formulaire-popup" class="popup">
 
-<a href="#" class="popup" id="formulaire">
-    <div class="formulaire-container">
-        <form id="formulaire-contact">
-            <div class="popup-formulaire">
-                <h2>Envoyez-moi un message</h2>
+        <div class="formulaire-container">
+            <form id="formulaire-contact">
+                <div class="popup-formulaire">
+                    <h2>Envoyez-moi un message</h2>
 
-                <div class="champ-formulaire">
+                    <div class="champ-formulaire">
 
-                    <input type="texte" name="nom" class="style-champ" required="required" placeholder="Votre nom">
+                        <input type="text" name="nom" class="style-champ" required="required" placeholder="Votre nom">
+                    </div>
+
+                    <div class="champ-formulaire">
+                        <input type="email" name="email" class="style-champ" required="required" placeholder="Votre email">
+                    </div>
+
+                    <div class="champ-formulaire">
+                    <textarea id="message" class="style-champ zone-textarea" required="required"
+                              placeholder="Votre message"
+                              rows="10"></textarea>
+                    </div>
+
+                    <div class="champ-formulaire">
+
+                        <input type="submit" name="submit" class="bouton-envoi" value="Envoyer">
+                    </div>
+
                 </div>
-
-                <div class="champ-formulaire">
-                    <input type="email" name="email" class="style-champ" required="required" placeholder="Votre email">
-                </div>
-
-                <div class="champ-formulaire">
-                    <textarea id="message" class="style-champ" required="required" placeholder="Votre message"
-                              rows="8"></textarea>
-                </div>
-
-                <div class="champ-formulaire">
-
-                    <input type="submit" name="submit" class="bouton-envoi" value="Envoyer">
-                </div>
-
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
-</a>
+
 <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="script-aline.js"></script>
 
 </body>
 </html>
