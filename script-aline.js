@@ -5,7 +5,5 @@ boutonCta.addEventListener("click", () => {
     popup.classList.toggle("affichage-popup");
 })
 
-popup.addEventListener("click", () => {
-    popup.classList.toggle("affichage-popup");
-})
+
 
