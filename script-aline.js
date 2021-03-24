@@ -1,20 +1,11 @@
-const Sophie = document.querySelector(".lienSophie")
-const Aline = document.querySelector(".lienAline")
-const Kevin = document.querySelector(".lienKevin")
-const Gregory = document.querySelector(".lienGregory")
+const boutonCta = document.querySelector("#bouton-cta");
+const popup = document.querySelector("#formulaire-popup");
 
-Sophie.onclick = function (){
-    document.location.href="Sophie.html"
-}
+boutonCta.addEventListener("click", () => {
+    popup.classList.toggle("affichage-popup");
+})
 
-Aline.onclick = function (){
-    document.location.href="Aline.html"
-}
+popup.addEventListener("click", () => {
+    popup.classList.toggle("affichage-popup");
+})
 
-Kevin.onclick = function (){
-    document.location.href="Kevin.html"
-}
-
-Gregory.onclick = function (){
-    document.location.href="Gregory.html"
-}
