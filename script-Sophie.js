@@ -37,3 +37,12 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+/* Dark mode */
+function darkMode() {
+    const element = document.body;
+    element.classList.toggle("dark-mode");
+    const modalContent = document.getElementById("modalContent");
+    modalContent.classList.toggle("dark-mode-modal");    
+}
+
