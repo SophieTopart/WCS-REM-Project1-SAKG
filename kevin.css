@@ -2,6 +2,15 @@
     margin: 0;
 }
 
+body {
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black, 0 0 2em white, 0 0 0.6em black;
+    background-image: url(https://pixabay.com/fr/illustrations/papier-num%C3%A9rique-herbe-verte-4906477/);
+    background-size: cover;
+   
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -51,6 +60,16 @@ header {
     margin: 1px 1px;
 }
 
+.blocContainer{
+    
+    background-position: center;
+    background-size: cover;
+    font-size: 20px;
+    text-shadow: 4px 4px 6px black, 0 0 2em rgb(0, 0, 0), 0 0 0.6em black;
+    font-style: unset;
+    color:whitesmoke;
+}
+
 
 
 
@@ -74,7 +93,7 @@ header {
 .blocContainer {
     display: grid;
     text-align: center;
-    margin: 60px 20px 10px 20px;
+    margin: 60px 20px 10px 0px;
     height: 100vh;
     grid-gap: 100px;
     grid-template-columns: repeat(5, 1fr);
@@ -131,12 +150,12 @@ li {
     background-color: none;
     border: 2px solid black;
     border: 5px outset rgb(255, 255, 255);
-    height: 285px;
+    height: 280px;
     width: 280px;
 }
 .elementPhoto:hover{
     display: block;
-    background-color: rgb(0, 238, 255);
+    background-color: rgb(79, 245, 134);
     opacity: 1;
 }
 
@@ -320,8 +339,26 @@ li {
     .picturesBigk {
         float: none;
     }
+
+    .noDisplay{
+        display: none;
+    }
+    .blocContainer{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        ju
+    }
+    .elementPhoto{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .haut-de-page {
     font-size: 30px !important;
+    
 }
+
+
