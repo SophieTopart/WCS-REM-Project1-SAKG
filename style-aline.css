@@ -438,6 +438,15 @@ ul.reseaux {
         font-size: xx-large;
         text-align: auto;
     }
+
+    .popup-formulaire{
+        width: 500px;
+        height: 366px;
+    }
+
+    .zone-textarea {
+        height: 100px;
+    }
 }
 
 @media screen and (max-width: 568px) {
@@ -496,6 +505,11 @@ ul.reseaux {
 
     .haut-de-page {
         font-size: 30px !important;
+    }
+
+    .popup-formulaire{
+        width: 320px;
+        height: 360px;
     }
 }
 
