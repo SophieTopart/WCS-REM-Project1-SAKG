@@ -508,8 +508,12 @@ ul.reseaux {
     }
 
     .popup-formulaire{
-        width: 320px;
+        width: 280px;
         height: 360px;
+    }
+
+    div.entete-popup h2{
+        font-size: 1rem;
     }
 }
 
