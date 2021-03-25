@@ -43,6 +43,29 @@ function darkMode() {
     const element = document.body;
     element.classList.toggle("dark-mode");
     const modalContent = document.getElementById("modalContent");
-    modalContent.classList.toggle("dark-mode-modal");    
+    modalContent.classList.remove("modalContent");
+    modalContent.classList.toggle("dark-mode-modal");
+    const entetePopup = document.getElementById("entete-popup");
+    entetePopup.classList.add("entete-popup-dark") 
+    const popup = document.getElementById("popup-formulaire");
+    popup.classList.remove("popup-formulaire");
+    popup.classList.add("popup-formulaire-dark");
 }
+
+/* Formulaire */
+
+const boutonCta = document.querySelector("#bouton-cta");
+const popup = document.querySelector("#formulaire-popup");
+
+boutonCta.addEventListener("click", () => {
+    popup.classList.toggle("affichage-popup");
+})
+
+
+// bouton croix formulaire
+const boutonFermetureFormulaire = document.querySelector("#bouton-fermeture-formulaire");
+
+boutonFermetureFormulaire.addEventListener("click", () => {
+    popup.classList.toggle("affichage-popup");
+})
 

@@ -32,27 +32,24 @@
             <img src ="Assets/Kevin.jpeg" class = "photosPages lienKevin" alt="Kevin">
             <img src ="Assets/Sophie.jpg" class = "photosPages lienSophie" alt="Sophie">
         </div>
-        <h1>Portfolio de Sophie</h1>
             </header>
        
+            <h1>Portfolio de Sophie</h1>
     <div class="blocContainer">
+
         <div class="bloc noDisplay"></div>
 
         <div class="bloc elementInfos">
             <h2>Qui suis-je ?</h2></br>
-            <p>Développeuse front-end, je manipule les langages HTML, CSS, et JavaScript. React et Node.js sont dans ma ligne de mire.</p>
+            <p>Développeuse front-end en devenir, je manipule les langages HTML, CSS, et JavaScript. React et Node.js sont dans ma ligne de mire.</p>
         
         </div>
 
         <div class="bloc noDisplay"></div>
 
         <div class="bloc elementInfos">
-            <h2>Mes réseaux</h2><br>
-            <ul>           
-                <li><a href="https://www.linkedin.com/in/sophie-bailly-topart-59a0b893/" target="_blank"> <img src="Assets/icons8-linkedin-64.png" id="linkedinIcon" alt="linkedin Icon" width="50px" height="50px"> </a></li>
-         
-                <li><a href="https://github.com/SophieTopart" target="_blank"> <img class="git" src="Assets/icons8-github-64-bis.png" alt="GitHub Icon" width="50px" height="50px"> </a></li>
-             </ul>
+            <h2>Où me vois-je dans 5 ans ?</h2></br>
+            <p>Salariée pour une entreprise agréable et dynamique, ou freelance pour explorer des horizons divers et variés.</p>
         </div>
 
         <div class="bloc noDisplay"></div>
@@ -68,9 +65,6 @@
                 <span class="close">&times;</span>
                     <h2>EXPERIENCE PROFESSIONNELLE</h2>
                 </br>
-                    <h3>Mars / août 2021 - Formation Développement Web et Mobile</h3>
-                    <p>Wild Code School</p>
-                </br>
                     <h3>2009 / 2021 - Adaptatrice audiovisuelle freelance</h3>
                     <p>Sous-titrage, voice over</p>
                 </br>
@@ -83,6 +77,9 @@
                  </br>    
                                    
                    <h2>FORMATION</h2>
+                </br>
+                   <h3>Mars / août 2021 - Formation Développement Web et Mobile</h3>
+                    <p>Wild Code School</p>
                 </br>
                    <h3>2006 / 2007 - Master 2 de Langues Etrangères Appliquées Anglais/Espagnol (LEA)</h3>
                     <p>Université d’Evry Val d’Essonne, Evry, 91</p>
@@ -104,16 +101,13 @@
 
         <div class="bloc elementPhoto">
 
-            <figure class="bloc elementPhoto">
-                <img src="Assets/Sophie.jpg">
+            <figure id="bouton-cta" class="bloc elementPhoto elementPhotoSophie">
 
+                <img class="photo-sophie" src="Assets/Sophie.jpg" alt="photo-sophie"/>
+        
                 <figcaption>
                     <h3>CONTACTEZ-MOI !</h3>
                 </figcaption>
-
-                <a href="#"></a>
-
-                <a href="#formulaire"></a>
 
             </figure>
 
@@ -137,43 +131,56 @@
         </div>
 
         <div class="bloc elementInfos">
-            <h2>Où me vois-je dans 5 ans ?</h2></br>
-            <p>Salariée pour une entreprise agréable et dynamique, ou freelance pour explorer des horizons divers et variés.</p>
+            <h2>Mes réseaux</h2><br>
+            <ul>           
+                <li><a href="https://www.linkedin.com/in/sophie-bailly-topart-59a0b893/" target="_blank"> <img src="Assets/icons8-linkedin-64.png" id="linkedinIcon" alt="linkedin Icon" width="50px" height="50px"> </a></li>
+         
+                <li><a href="https://github.com/SophieTopart" target="_blank"> <img class="git" src="Assets/icons8-github-64-bis.png" alt="GitHub Icon" width="50px" height="50px"> </a></li>
+             </ul>
         </div>
 
         <div class="bloc noDisplay"></div>
     </div>
 
-    <a href="#" class="popup" id="formulaire">
+    <div id="formulaire-popup" class="popup">
+
         <div class="formulaire-container">
+
             <form id="formulaire-contact">
-                <div class="popup-formulaire">
-                    <h2>Envoyez-moi un message</h2>
-    
-                    <div class="champ-formulaire">
-    
-                        <input type="texte" name="nom" class="style-champ" required="required" placeholder="Votre nom">
+                <div id="popup-formulaire" class="popup-formulaire">
+
+                    <div id="entete-popup" class="entete-popup">
+                        <h2>Envoyez-moi un message</h2>
+                        <div class="grow"></div>
+                        <span id="bouton-fermeture-formulaire" class="close">×</span>
                     </div>
-    
+
+                    <div class="champ-formulaire">
+
+                        <input type="text" name="nom" class="style-champ" required="required" placeholder="Votre nom">
+                    </div>
+
                     <div class="champ-formulaire">
                         <input type="email" name="email" class="style-champ" required="required" placeholder="Votre email">
                     </div>
-    
+
                     <div class="champ-formulaire">
-                        <textarea id="message" class="style-champ" required="required" placeholder="Votre message"
-                                  rows="8"></textarea>
+                    <textarea id="message" class="style-champ zone-textarea" required="required"
+                              placeholder="Votre message"
+                              rows="10"></textarea>
                     </div>
-    
+
                     <div class="champ-formulaire">
-    
+
                         <input type="submit" name="submit" class="bouton-envoi" value="Envoyer">
                     </div>
-    
+
                 </div>
             </form>
         </div>
-    </a>
+    </div>
 
-    <script type="text/javascript" src="script-Sophie.js"></script> 
+    <script type="text/javascript" src="script-Sophie.js"></script>
+
 </body>
 </html>
