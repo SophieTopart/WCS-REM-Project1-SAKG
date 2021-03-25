@@ -499,3 +499,9 @@ ul.reseaux {
         font-size: 30px !important;
     }
 }
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
