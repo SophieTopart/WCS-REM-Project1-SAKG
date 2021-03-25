@@ -13,6 +13,25 @@ boutonFermetureFormulaire.addEventListener("click", () => {
     popup.classList.toggle("affichage-popup");
 })
 
+//gestion du bouton envoyer
+const boutonEnvoyer = document.querySelector("#formulaire-contact");
+const messageNom = document.querySelector("#message-nom");
+const messageEmail = document.querySelector("#message-email");
+const messageContenu = document.querySelector("#message-contenu");
+
+boutonEnvoyer.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    messageNom.value = "";
+    messageEmail.value = "";
+    messageContenu.value = "";
+
+    alert("Votre message a bien été envoyé");
+
+    popup.classList.toggle("affichage-popup");
+
+})
+
 
 
 /* Animation CV */
