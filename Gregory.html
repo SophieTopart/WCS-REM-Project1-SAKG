@@ -4,38 +4,182 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-gregory.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <title>Page perso de Gregory</title>
-
 </head>
 <body>
-  <header-head>
-      <div class="flex-container">
-        <div class="logo1">
-         <a href="http://www.wildcodeschool.fr" target="_blank"> <img src="Assets/AKGS.png" alt="Logo AKGS" width="110px" height="110px"> </a> 
-        </div>
-        <div class="logo2">
-         <a href="http://www.wildcodeschool.fr" target="_blank"> <img src="Assets/LOGO_WILDCODESCHOOL1000-1024x1024.png" alt="Logo wcs" width="120px" height="100px"> </a>
-        </div>
-      </div>      
-      </header-head>
+    <header-head>
+        <div class="flex-container">
+          <div class="logo1">
+           <a href="index.html" target="_blank"> <img src="Assets/AKGS.png" alt="Logo AKGS" width="110px" height="110px"> </a> 
+          </div>
+          <div>
+            <button onclick="darkMode()" class="btn">Dark mode</button>
+          </div>
+          <div class="logo2">
+           <a href="http://www.wildcodeschool.fr" target="_blank"> <img src="Assets/LOGO_WILDCODESCHOOL1000-1024x1024.png" alt="Logo wcs" width="120px" height="100px"> </a>
+          </div>
+        </div>      
+        </header-head>
 
-      <header class = "headerPages">
-        <h1>Portfolio de Gregory</h1>
+    <header class = "headerPages">
+        
         <div class = "photosBandeau">
-    
             <img src ="Assets/Aline.jpeg" class = "photosPages lienAline" alt="Aline">
             <img src ="Assets/Gregory.jpg" class = "photosPages lienGregory" alt="Gregory">
             <img src ="Assets/Kevin.jpeg" class = "photosPages lienKevin" alt="Kevin">
             <img src ="Assets/Sophie.jpg" class = "photosPages lienSophie" alt="Sophie">
         </div>
-            </header>
+    </header>
+    <!--deplacement de la balise h1-->
+    <h1>Portfolio de Gregory</h1>
        
+    <div class="blocContainer">
+        <div class="bloc noDisplay"></div>
 
-<script type="text/javascript" src="script.js"></script>
+        <div class="bloc elementInfos">
+            <h2>Qui suis-je ?</h2></br>
+            <p>Curieux par nature, un peu touche à tout, je me Challenge régulièrement afin d'acquerir un maximum de connaissances dans ce qui me passionne.</p>
+        </div>
 
+        <div class="bloc noDisplay"></div>
+         <div class="bloc elementInfos">
 
+            <h2>Où me vois-je dans 5 ans ?</h2></br>
+            <p>Salarié pour une entreprise agréable et dynamique, ou freelance pour explorer des horizons divers et variés.</p>
+
+         </div>
+
+        <div class="bloc noDisplay"></div>
+
+        <div class="bloc elementInfos">
+            <h2>Quel a été mon parcours ?</h2></br>
+            <p>Après un B.E.P Electrotechnique, je me suis mis à travailler rapidement afin d'être autonome,de la manutention à la distribution, en passant par le commerce, mon dernier emploi a été d'être Responsable d'un des plus gros Magasin spécialisé dans la vente d'articles de Pêche en France.</p>
+                <span class="material-icons" id="logoPlus">add_circle_outline</span>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div id="modalContent" class="modalContent">
+                <span class="close">&times;</span>
+                    <h2>EXPERIENCE PROFESSIONNELLE</h2>
+                </br>
+                  <h3>2021 - Formation Développeur Web à la Wild Code School </h3>
+                  <p>Remote FR</p>
+                </br>
+                  <h3>2010 / 2020 - Responsable de Magasin - Pacific Pêche</h3>
+                  <p>Corbeil-Essonnes, 91</p>
+                </br>
+                  <h3>2008 / 2010 - Vendeur puis Responsable - Mondial Pêche</h3>
+                  <p>Corbeil-Essonnes, 91</p>
+                </br>
+                  <h3>2007 / 2008 - Facteur </h3>
+                  <p>Brunoy, 91</p>
+                </br>
+                  <h3>2006 / 2007 - Vendeur polyvalent - Jardiland</h3>
+                  <p>Lieusaint, 77</p>
+                </br>
+                  <h3>2005 / 2006 - Contrôleur de gestion - FM LOGISTIC</h3>
+                  <p>Moissy cramayel, 77</p>
+                </br>
+                  <h3>2004 / 2005 - Merchandiser - Centre commercial CORA</h3>
+                  <p>Boussy St Antoine, 91</p>
+                </br>
+                  <h3>2002 / 2004 - Préparateur de commandes - PSA Peugeot Citroën</h3>
+                  <p>Moissy-Cramayel, 77</p>
+                </br>
+                  <h3>2000 / 2002 - Vendeur Castorama</h3>
+                  <p>Montgeron-Vigneux, Corbeil-Essonnes, 91</p>
+                </br>    
+                                   
+                   <h2>FORMATION</h2>
+                </br>
+                    <h3>1996 / 1998 - B.E.P Electrotechnique</h3>
+                    <p>Lycée Nadar, Draveil , 91</p>
+                </br>	
+                     
+            </div>
+        </div>
+
+        <div class="bloc noDisplay"></div>
+
+        <div class="bloc elementPhoto">
+
+            <figure class="bloc elementPhoto">
+                <img src="Assets/Gregory.jpg">
+
+                <figcaption>
+                    <h3>CONTACTEZ-MOI !</h3>
+                </figcaption>
+
+                <a href="#"></a>
+
+                <a href="#formulaire"></a>
+
+            </figure>
+
+        </div>
+
+        <div class="bloc noDisplay"></div>
+
+        <div class="bloc elementInfos">
+            <h2>Quels sont mes hobbies ?</h2></br>
+            <p>Informatique, Musique,Photographie, le "septième art", la Randonnée et un peu de Fit... mais plus que tout : mes enfants!</p>
+        </div>
+
+        <div class="bloc noDisplay"></div>
+
+        <div class="bloc elementInfos">
+            <h2>Pourquoi cette reconversion ?</h2></br>
+            <p>Après dix ans dans le même secteur d'activité, il me fallait du renouveau, je me suis donc lancé ce challenge de m'accomplir dans l'une de mes autres passions.</p>
+        </div>
+
+        <div class="bloc noDisplay">
+        </div>
+
+        <div class="bloc elementInfos">
+
+            <h2>Mes réseaux</h2><br>
+            <ul>           
+                <li><a href="https://www.linkedin.com/in/gregory-bouteville-14b464207/" target="_blank"> <img src="Assets/icons8-linkedin-64.png" id="linkedinIcon" alt="linkedin Icon" width="50px" height="50px"> </a></li>
+         
+                <li><a href="https://github.com/Gregory-Bouteville" target="_blank"> <img class="git" src="Assets/icons8-github-64-bis.png" alt="GitHub Icon" width="50px" height="50px"> </a></li>
+             </ul>
+
+        <div class="bloc noDisplay"></div>
+    </div>
+
+    <a href="#" class="popup" id="formulaire">
+        <div class="formulaire-container">
+            <form id="formulaire-contact">
+                <div class="popup-formulaire">
+                    <h2>Envoyez-moi un message</h2>
+    
+                    <div class="champ-formulaire">
+    
+                        <input type="texte" name="nom" class="style-champ" required="required" placeholder="Votre nom">
+                    </div>
+    
+                    <div class="champ-formulaire">
+                        <input type="email" name="email" class="style-champ" required="required" placeholder="Votre email">
+                    </div>
+    
+                    <div class="champ-formulaire">
+                        <textarea id="message" class="style-champ" required="required" placeholder="Votre message"
+                                  rows="8"></textarea>
+                    </div>
+    
+                    <div class="champ-formulaire">
+    
+                        <input type="submit" name="submit" class="bouton-envoi" value="Envoyer">
+                    </div>
+    
+                </div>
+            </form>
+        </div>
+    </a>
+
+    <script type="text/javascript" src="script-Sophie.js"></script> 
 </body>
 </html>
