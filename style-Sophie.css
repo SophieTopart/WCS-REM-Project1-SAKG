@@ -1,3 +1,6 @@
+* {
+    margin: 0;
+}
 /* Dark mode */
 
 .dark-mode {
@@ -6,16 +9,28 @@
 }
 
 .dark-mode-modal {
-  background-color: grey;
+    background-color: lightgrey;
+    color: black;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.entete-popup-dark {
   color: black;
 }
 
+.popup-formulaire-dark {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  padding: 20px;
+  width: 600px;
+  height: 440px;
+}
 
 /* Body */
-
-* {
-    margin: 0;
-}
 
 header {
     display: flex;
@@ -31,6 +46,13 @@ header {
     height: 300px;
     text-shadow: 1px 1px 2px black, 0 0 2em white, 0 0 0.6em black;
     text-align: center;
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .photosBandeau {
@@ -70,16 +92,16 @@ ul li {
 /* Corps page perso */
 
 .headerPages {
-    height: 20vh;
+    height: 300px;
 }
 
 .photosPages {
-    height: 10vh;
+    height: 15vh;
     border-radius: 50%;
 }
 
 .lienSophie {
-    height: 15vh;
+    height: 20vh;
     border-radius: 50%;
 }
 
@@ -99,8 +121,7 @@ ul li {
 
 .bloc {
     padding: 0.5em;
-    background-color: white);
-    
+      
 }
 
 .noDisplay {
@@ -130,7 +151,7 @@ ul li {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -305,17 +326,22 @@ ul li {
   border: 1px solid;
 }
 
+.bouton-envoi:hover{
+  background-color: #3795d6;
+}
+
 .style-champ {
   color: #555;
   font-size: 14px;
   padding: 6px 12px;
   background-color: white;
   border-radius: 4px;
-  border: 1px solid #eaeaea;
+  border: 1px solid rgba(0, 0, 0, 0.24);
   font-weight: 300;
   outline: none;
   box-shadow: none;
   height: 40px;
+  width: 95%;
 }
 
 .style-champ:hover, .style-champ:focus{
@@ -326,20 +352,17 @@ ul li {
 
 .popup {
   display: none;
-
   position: fixed;
   z-index: 999;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-
   padding: 1em;
-
   background: rgba(0, 0, 0, 0.6);
 }
 
-.popup:target {
+.affichage-popup {
   display: block;
 }
 
@@ -356,4 +379,147 @@ ul li {
   flex-direction: column;
   background-color: white;
   padding: 20px;
+  width: 600px;
+  height: 440px;
 }
+
+.champ-formulaire {
+  width: 100%;
+  margin-top: 3vh;
+}
+
+.zone-textarea {
+  height: 150px;
+}
+
+ul.reseaux {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.entete-popup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+/*Responsive pages perso*/
+
+@media screen and (max-width: 1024px) {
+  /*à changer individuellement - zoom photo*/
+.photosPages.lienSophie {
+  height: 20vh;
+  width: 20vh;
+}
+.photosPages {
+  height: 15vh;
+  width: 15vh;
+}
+
+@media screen and (max-width: 968px) {
+
+/*Ajout du blocContainer*/
+.blocContainer {  
+  display: block;
+  flex-wrap: wrap;
+}
+
+.photosBandeau {
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3em;
+}
+
+.photosIndiv {
+  height: 8vh;
+  width: 8vh;
+}
+/*à changer individuellement*/
+.photosPages.lienSophie {
+  height: 12vh;
+  width: 12vh;
+}
+/*Changement de la taille photosPages*/
+.photosPages {
+  height: 10vh;
+  width: 10vh;
+}
+
+header {
+  height: 50vh;
+}
+/*Ajout de la balise h1*/
+h1 {
+  text-align: center; 
+  font-size: xx-large;
+  text-align: auto;
+}
+}
+
+@media screen and (max-width: 568px) {
+
+/*Ajout du blocContainer*/
+.blocContainer {
+  display: flex;
+  flex-flow: column;
+  width: auto;
+  height: auto;
+  margin-top: 20px;
+}
+/*Ajout de la balise h1*/
+h1 {
+  text-align: center;
+  font-size: large;
+  text-align: auto;
+}
+
+.container-presentation {
+  display: block;
+  text-align: center;
+}
+
+.photosBandeau {
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3em;
+}
+
+.photosIndiv {
+  height: 12vh;
+  width: 12vh;
+}
+
+/*à changer individuellement*/
+.photosPages.lienSophie {
+height: 8vh;
+width: 8vh;
+}
+
+.photosPages {
+  height: 6vh;
+  width: 6vh;
+}
+
+.section-icone {
+  display: block;
+  text-align: center;
+}
+
+.picturesBigk {
+  float: none;
+}
+
+.haut-de-page {
+  font-size: 30px !important;
+}
+
