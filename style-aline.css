@@ -1,13 +1,13 @@
 .headerPages {
-    height: 20vh;
+    height: 300px;
 }
 
-body{
+body {
     display: block;
 }
 
-.photosPages {
-    height: 10vh;
+.photosPages .lienAline {
+    height: 20vh;
     border-radius: 50%;
 }
 
@@ -27,8 +27,6 @@ body{
 
 .bloc {
     padding: 0.5em;
-    background-color: white;
-
 }
 
 .noDisplay {
@@ -44,7 +42,6 @@ body{
     color: white;
     font-size: 14px;
     font-weight: 300;
-    letter-spacing: 5px;
     text-transform: uppercase;
     border-radius: 3px;
     border-bottom: 3px solid #2f9697;
@@ -54,9 +51,10 @@ body{
     white-space: nowrap;
     vertical-align: middle;
     border: 1px solid;
+    cursor: pointer;
 }
 
-.bouton-envoi:hover{
+.bouton-envoi:hover {
     background-color: #3795d6;
 }
 
@@ -74,31 +72,28 @@ body{
     width: 95%;
 }
 
-.style-champ:hover, .style-champ:focus{
+.style-champ:hover, .style-champ:focus {
     border-color: #0671b2;
     outline: none;
     box-shadow: none;
 }
 
-.elementPhotoAline{
+.elementPhotoAline {
     width: 280px !important;
     height: 280px !important;
     border: none !important;
     padding: 0 !important;
     min-width: 280px !important;
     max-width: 280px !important;
-    border-radius: 0 !important;
+    border-radius: 10% !important;
     background-image: none !important;
     cursor: pointer;
 }
 
 /*CTA animé*/
 
-
-
-.elementPhoto{
+.elementPhoto {
     background-color: none;
-
     font-size: 16px;
     margin: 0px;
     max-width: 315px;
@@ -108,15 +103,15 @@ body{
     text-align: center;
     width: auto;
     padding: -0.5em;
-    background-color: none;
     border: 2px solid black;
     border: 5px outset rgb(255, 255, 255);
     height: 280px;
     width: 280px;
 }
-.elementPhoto:hover{
+
+.elementPhoto:hover {
     display: block;
-    background-color: rgb(79, 245, 134);
+    background-color: deeppink;
     opacity: 1;
 }
 
@@ -283,20 +278,20 @@ body{
 #logoPlus:hover {
     cursor: pointer;
     transform: skew(10deg);
-    color:cornflowerblue;
+    color: cornflowerblue;
 }
 
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .modalContent {
@@ -321,9 +316,10 @@ body{
     cursor: pointer;
 }
 
-.titre-cv{
+.titre-cv {
     text-decoration: #0671b2 underline;
 }
+
 /* Dark mode */
 
 .dark-mode {
@@ -335,6 +331,7 @@ body{
     background-color: grey;
     color: black;
 }
+
 
 ul.reseaux {
     display: flex;
@@ -355,4 +352,173 @@ ul.reseaux {
 
 .grow {
     flex-grow: 1;
+}
+
+.lienAline {
+    height: 15vh;
+    border-radius: 50%;
+}
+
+.titre-portfolio-aline {
+    margin-top: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.photosBandeau {
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 3em;
+}
+
+.photosIndiv {
+    height: 8vh;
+    width: 8vh;
+}
+
+.elementInfos {
+    background: none;
+}
+
+/*Responsive pages perso*/
+
+@media screen and (max-width: 1024px) {
+    /*à changer individuellement - zoom photo*/
+    .photosPages.lienAline {
+        height: 20vh;
+        width: 20vh;
+    }
+
+    .photosPages {
+        height: 15vh;
+        width: 15vh;
+    }
+}
+
+@media screen and (max-width: 968px) {
+
+    /*Ajout du blocContainer*/
+    .blocContainer {
+        display: block;
+        flex-wrap: wrap;
+    }
+
+    .photosBandeau {
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 3em;
+    }
+
+    .photosIndiv {
+        height: 8vh;
+        width: 8vh;
+    }
+
+    /*à changer individuellement*/
+    .photosPages.lienAline {
+        height: 12vh;
+        width: 12vh;
+    }
+
+    /*Changement de la taille photosPages*/
+    .photosPages {
+        height: 10vh;
+        width: 10vh;
+    }
+
+    header {
+        height: 50vh;
+    }
+
+    /*Ajout de la balise h1*/
+    h1 {
+        text-align: center;
+        font-size: xx-large;
+        text-align: auto;
+    }
+
+    .popup-formulaire{
+        width: 500px;
+        height: 366px;
+    }
+
+    .zone-textarea {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+
+    /*Ajout du blocContainer*/
+    .blocContainer {
+        display: flex;
+        flex-flow: column;
+        width: auto;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    /*Ajout de la balise h1*/
+    h1 {
+        text-align: center;
+        font-size: large;
+        text-align: auto;
+    }
+
+    .container-presentation {
+        display: block;
+        text-align: center;
+    }
+
+    .photosBandeau {
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 3em;
+    }
+
+    .photosIndiv {
+        height: 12vh;
+        width: 12vh;
+    }
+
+    /*à changer individuellement*/
+    .photosPages.lienAline {
+        height: 8vh;
+        width: 8vh;
+    }
+
+    .photosPages {
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .section-icone {
+        display: block;
+        text-align: center;
+    }
+
+    .picturesBigk {
+        float: none;
+    }
+
+    .haut-de-page {
+        font-size: 30px !important;
+    }
+
+    .popup-formulaire{
+        width: 320px;
+        height: 360px;
+    }
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.entete-popup h2{
+    color: black;
 }
