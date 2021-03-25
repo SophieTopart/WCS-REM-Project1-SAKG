@@ -152,7 +152,7 @@ li {
 }
 .elementPhoto:hover{
     display: block;
-    background-color: rgb(79, 245, 134);
+    background-color: rgb(255, 255, 255);
     opacity: 1;
 }
 
