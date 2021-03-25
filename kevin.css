@@ -4,11 +4,9 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    color: whitesmoke;
-    text-shadow: 1px 1px 2px black, 0 0 2em white, 0 0 0.6em black;
-    background-image: url(https://www.transparenttextures.com/patterns/black-linen.png);
-    background-size: cover;
-   
+    color: black;
+    text-shadow: 1px 1px 2px white, 0 0 2em white, 0 0 0.6em white;
+    
 }
 
 header {
@@ -65,9 +63,9 @@ header {
     background-position: center;
     background-size: cover;
     font-size: 20px;
-    text-shadow: 4px 4px 6px black, 0 0 2em rgb(0, 0, 0), 0 0 0.6em black;
+    
     font-style: unset;
-    color:whitesmoke;
+    color: black;
 }
 
 
