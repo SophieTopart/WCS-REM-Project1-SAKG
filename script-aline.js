@@ -6,6 +6,15 @@ boutonCta.addEventListener("click", () => {
 })
 
 
+// bouton croix formulaire
+const boutonFermetureFormulaire = document.querySelector("#bouton-fermeture-formulaire");
+
+boutonFermetureFormulaire.addEventListener("click", () => {
+    popup.classList.toggle("affichage-popup");
+})
+
+
+
 /* Animation CV */
 const modal = document.getElementById("myModal");
 const spanCV = document.getElementById("logoPlus");
@@ -24,6 +33,8 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+
 
 /* Dark mode */
 function darkMode() {
