@@ -2,6 +2,10 @@
     height: 20vh;
 }
 
+body{
+    display: block;
+}
+
 .photosPages {
     height: 10vh;
     border-radius: 50%;
@@ -19,10 +23,6 @@
     height: 100vh;
     grid-gap: 40px;
     grid-template-columns: repeat(5, 1fr);
-    text-shadow: none !important;
-    color: black !important;
-    font-size: 16px !important;
-
 }
 
 .bloc {
@@ -202,4 +202,15 @@
 .dark-mode-modal {
     background-color: grey;
     color: black;
+}
+
+ul.reseaux {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.nowrap {
+    white-space: nowrap;
 }
