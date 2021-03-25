@@ -1,13 +1,13 @@
 .headerPages {
-    height: 20vh;
+    height: 300px;
 }
 
 body {
     display: block;
 }
 
-.photosPages {
-    height: 10vh;
+.photosPages .lienAline {
+    height: 20vh;
     border-radius: 50%;
 }
 
@@ -27,8 +27,6 @@ body {
 
 .bloc {
     padding: 0.5em;
-    background-color: white;
-
 }
 
 .noDisplay {
@@ -88,7 +86,7 @@ body {
     padding: 0 !important;
     min-width: 280px !important;
     max-width: 280px !important;
-    border-radius: 0 !important;
+    border-radius: 10% !important;
     background-image: none !important;
     cursor: pointer;
 }
@@ -106,7 +104,6 @@ body {
     text-align: center;
     width: auto;
     padding: -0.5em;
-    background-color: none;
     border: 2px solid black;
     border: 5px outset rgb(255, 255, 255);
     height: 280px;
@@ -115,7 +112,7 @@ body {
 
 .elementPhoto:hover {
     display: block;
-    background-color: rgb(79, 245, 134);
+    background-color: deeppink;
     opacity: 1;
 }
 
@@ -288,7 +285,7 @@ body {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -336,6 +333,7 @@ body {
     color: black;
 }
 
+
 ul.reseaux {
     display: flex;
     flex-direction: row;
@@ -363,7 +361,141 @@ ul.reseaux {
 }
 
 .titre-portfolio-aline {
-    display: flex;
-    justify-content: center;
+    margin-top: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.photosBandeau {
+    flex-wrap: wrap;
     align-items: center;
+    padding: 3em;
+}
+
+.photosIndiv {
+    height: 8vh;
+    width: 8vh;
+}
+
+.elementInfos {
+    background: none;
+}
+
+/*Responsive pages perso*/
+
+@media screen and (max-width: 1024px) {
+    /*à changer individuellement - zoom photo*/
+    .photosPages.lienAline {
+        height: 20vh;
+        width: 20vh;
+    }
+
+    .photosPages {
+        height: 15vh;
+        width: 15vh;
+    }
+}
+
+@media screen and (max-width: 968px) {
+
+    /*Ajout du blocContainer*/
+    .blocContainer {
+        display: block;
+        flex-wrap: wrap;
+    }
+
+    .photosBandeau {
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 3em;
+    }
+
+    .photosIndiv {
+        height: 8vh;
+        width: 8vh;
+    }
+
+    /*à changer individuellement*/
+    .photosPages.lienAline {
+        height: 12vh;
+        width: 12vh;
+    }
+
+    /*Changement de la taille photosPages*/
+    .photosPages {
+        height: 10vh;
+        width: 10vh;
+    }
+
+    header {
+        height: 50vh;
+    }
+
+    /*Ajout de la balise h1*/
+    h1 {
+        text-align: center;
+        font-size: xx-large;
+        text-align: auto;
+    }
+}
+
+@media screen and (max-width: 568px) {
+
+    /*Ajout du blocContainer*/
+    .blocContainer {
+        display: flex;
+        flex-flow: column;
+        width: auto;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    /*Ajout de la balise h1*/
+    h1 {
+        text-align: center;
+        font-size: large;
+        text-align: auto;
+    }
+
+    .container-presentation {
+        display: block;
+        text-align: center;
+    }
+
+    .photosBandeau {
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 3em;
+    }
+
+    .photosIndiv {
+        height: 12vh;
+        width: 12vh;
+    }
+
+    /*à changer individuellement*/
+    .photosPages.lienAline {
+        height: 8vh;
+        width: 8vh;
+    }
+
+    .photosPages {
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .section-icone {
+        display: block;
+        text-align: center;
+    }
+
+    .picturesBigk {
+        float: none;
+    }
+
+    .haut-de-page {
+        font-size: 30px !important;
+    }
 }
