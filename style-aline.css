@@ -505,3 +505,7 @@ ul.reseaux {
     justify-content: center;
     align-items: center;
 }
+
+div.entete-popup h2{
+    color: black;
+}
