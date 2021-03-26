@@ -147,7 +147,7 @@
         <div class="formulaire-container">
 
             <form id="formulaire-contact">
-                <div id="popup-formulaire" class="popup-formulaire">
+                <div class="popup-formulaire">
 
                     <div id="entete-popup" class="entete-popup">
                         <h2>Envoyez-moi un message</h2>
@@ -157,30 +157,30 @@
 
                     <div class="champ-formulaire">
 
-                        <input type="text" name="nom" class="style-champ" required="required" placeholder="Votre nom">
+                        <input type="text" name="nom" id="message-nom" class="style-champ" required="required" placeholder="Votre nom">
                     </div>
-
+    
                     <div class="champ-formulaire">
-                        <input type="email" name="email" class="style-champ" required="required" placeholder="Votre email">
+                        <input type="email" name="email" id="message-email" class="style-champ" required="required" placeholder="Votre email">
                     </div>
-
+    
                     <div class="champ-formulaire">
-                    <textarea id="message" class="style-champ zone-textarea" required="required"
-                              placeholder="Votre message"
-                              rows="10"></textarea>
+                        <textarea id="message-contenu" class="style-champ zone-textarea" required="required"
+                                  placeholder="Votre message"
+                                  rows="10"></textarea>
                     </div>
-
+    
                     <div class="champ-formulaire">
-
+    
                         <input type="submit" name="submit" class="bouton-envoi" value="Envoyer">
                     </div>
-
                 </div>
             </form>
         </div>
     </div>
 
     <script type="text/javascript" src="script-Sophie.js"></script>
+    
 
 </body>
 </html>
