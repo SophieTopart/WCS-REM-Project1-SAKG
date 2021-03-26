@@ -247,7 +247,7 @@ body {
     background-color: white;
     padding: 20px;
     width: 600px;
-    height: 440px;
+    height: 450px;
 }
 
 .photo-aline {
@@ -257,7 +257,7 @@ body {
 
 .champ-formulaire {
     width: 100%;
-    margin-top: 3vh;
+    margin-top: 24px;
 }
 
 .zone-textarea {
@@ -441,7 +441,7 @@ ul.reseaux {
 
     .popup-formulaire{
         width: 500px;
-        height: 366px;
+        height: 396px;
     }
 
     .zone-textarea {
@@ -509,7 +509,7 @@ ul.reseaux {
 
     .popup-formulaire{
         width: 280px;
-        height: 360px;
+        height: 396px;
     }
 
     div.entete-popup h2{
