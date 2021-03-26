@@ -6,13 +6,13 @@ body {
     display: block;
 }
 
-.lienAline {
-    height: 20vh;
+.photosPages{
+    height: 15vh;
     border-radius: 50%;
 }
 
-.photosPages{
-    height: 15vh;
+.lienAline {
+    height: 20vh;
     border-radius: 50%;
 }
 
@@ -359,11 +359,6 @@ ul.reseaux {
     flex-grow: 1;
 }
 
-.lienAline {
-    height: 15vh;
-    border-radius: 50%;
-}
-
 .titre-portfolio-aline {
     margin-top: 10px;
     font-size: 50px;
@@ -387,6 +382,12 @@ ul.reseaux {
     background: none;
 }
 
+.btn {
+    background-color: lightgrey;
+    font-size: 16px;
+    padding: 4px;
+    border-radius: 5px;
+}
 /*Responsive pages perso*/
 
 @media screen and (max-width: 1024px) {

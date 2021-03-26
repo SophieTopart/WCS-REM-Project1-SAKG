@@ -30,6 +30,19 @@
     width: 600px;
     height: 440px;
   }
+  .btn {
+    background-color: lightgrey;
+    font-size: 16px;
+    padding: 4px;
+    border-radius: 5px;
+}
+.btn:hover {
+  background-color: rgb(46, 40, 40);
+  color: white;
+}
+
+
+
 
 /* Body */
 
