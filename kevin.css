@@ -2,12 +2,36 @@
     margin: 0;
 }
 
-body {
-    font-family: 'Raleway', sans-serif;
+/* Dark mode */
+
+.dark-mode {
+    background-color: rgb(46, 40, 40);
+    color: white;
+  }
+  
+  .dark-mode-modal {
+      background-color: lightgrey;
+      color: black;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+  }
+  
+  .entete-popup-dark {
     color: black;
-    text-shadow: 1px 1px 2px white, 0 0 2em white, 0 0 0.6em white;
-    
-}
+  }
+  
+  .popup-formulaire-dark {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    padding: 20px;
+    width: 600px;
+    height: 440px;
+  }
+
+/* Body */
 
 header {
     display: flex;
@@ -23,6 +47,13 @@ header {
     height: 300px;
     text-shadow: 1px 1px 2px black, 0 0 2em white, 0 0 0.6em black;
     text-align: center;
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .photosBandeau {
@@ -44,11 +75,8 @@ header {
     cursor: pointer;
 }
 
-.section-icone {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+body {
+    font-family: 'Raleway', sans-serif;
 }
 
 .flex-container {
@@ -58,27 +86,27 @@ header {
     margin: 1px 1px;
 }
 
-.blocContainer{
-    
-    background-position: center;
-    background-size: cover;
-    font-size: 20px;
-    font-style: unset;
-    color: black;
+ul li {
+    display: inline-block;
 }
 
 
 
 
 
-
+/* Corps page perso */
 
 .headerPages {
-    height: 20vh;
+    height: 300px;
 }
 
 .photosPages {
-    height: 10vh;
+    height: 15vh;
+    border-radius: 50%;
+}
+
+.lienKevin {
+    height: 20vh;
     border-radius: 50%;
 }
 
@@ -90,70 +118,100 @@ header {
 .blocContainer {
     display: grid;
     text-align: center;
-    margin: 60px 20px 10px 0px;
+    margin: 60px 20px 10px 20px;
     height: 100vh;
-    grid-gap: 100px;
+    grid-gap: 40px;
     grid-template-columns: repeat(5, 1fr);
-    width: 100%;
 }
 
-
-
+.bloc {
+    padding: 0.5em;
+      
+}
 
 .noDisplay {
     opacity: 0;
 }
 
-
 .elementNom {
-    background-color: none;
-    border-style: double;
-    height: 30%;
-    font-size: 15px;
-    letter-spacing: 5px;
-    font-style: italic;
+    background-color: white;
+   
+}
+ /* Modal CV*/
+
+#buttonCV {
+    margin: 10px;
 }
 
-
-ul li {
-    display: inline-block;
+#logoPlus {
+   margin: 7px; 0px; 0px; 0px;
+   color: #0671b2;
 }
 
-li {
-    margin-top: 30px;
+#logoPlus:hover {
+  transform: skew(10deg);
+  color:cornflowerblue;
+  cursor: pointer;
 }
 
-.git {
-    margin-bottom: -5px;
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
 }
 
+.modalContent {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 /*CTA animé*/
 
-
-
 .elementPhoto{
     background-color: none;
-    
     font-size: 16px;
     margin: 0px;
+    padding: 0px;
     max-width: 315px;
     min-width: 230px;
     overflow: hidden;
     position: relative;
     text-align: center;
     width: auto;
-    padding: -0.5em;
-    background-color: none;
-    border: 2px solid black;
-    border: 5px outset rgb(255, 255, 255);
     height: 280px;
     width: 280px;
+    border-radius: 10%;
 }
+
 .elementPhoto:hover{
     display: block;
-    background-color: rgb(79, 245, 134);
+    background-color: rgb(255, 255, 255);
     opacity: 1;
+    cursor: pointer;
 }
 
 .elementPhoto * {
@@ -194,7 +252,6 @@ li {
     backface-visibility: hidden;
     max-width: 103%;
     vertical-align: top;
-
   }
   
   .elementPhoto figcaption {
@@ -255,107 +312,221 @@ li {
   }
   
 
+/* Formulaire */
 
 
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Responsive*/
-
-@media (min-width: 768px) and (max-width: 1023px) {
-    .photosIndiv {
-        height: 12vh;
-    }
+.bouton-envoi {
+  background-color: #0671b2;
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin-top: 5px;
+  border-bottom: 3px solid #2f9697;
+  box-shadow: none;
+  padding: 10px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid;
 }
 
-@media (max-width: 767px) {
-    .photosBandeau {
-        flex-wrap: wrap;
-        align-items: center;
-        padding: 3em;
-    }
-
-    .photosIndiv {
-        height: 8vh;
-        width: 8vh;
-    }
-
-    .photosPages {
-        height: 8vh;
-        width: 8vh;
-    }
-
-    header {
-        height: 50vh;
-    }
+.bouton-envoi:hover{
+  background-color: #3795d6;
 }
 
-@media all and (max-width: 568px) {
-    .container-presentation {
-        display: block;
-        text-align: center;
-    }
+.style-champ {
+  color: #555;
+  font-size: 14px;
+  padding: 6px 12px;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  font-weight: 300;
+  outline: none;
+  box-shadow: none;
+  height: 40px;
+  width: 95%;
+}
 
-    .section-icone {
-        display: block;
-        text-align: center;
-    }
+.style-champ:hover, .style-champ:focus{
+  border-color: #0671b2;
+  outline: none;
+  box-shadow: none;
+}
 
-    .picturesBigk {
-        float: none;
-    }
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.6);
+}
 
-    .noDisplay{
-        display: none;
-    }
-    .blocContainer{
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        height: auto;
-        ju
-    }
-    .elementPhoto{
-        display: flex;
-        justify-content: center;
-    }
+.affichage-popup {
+  display: block;
+}
+
+.formulaire-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.popup-formulaire {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  width: 600px;
+  height: 440px;
+}
+
+.champ-formulaire {
+  width: 100%;
+  margin-top: 3vh;
+}
+
+.zone-textarea {
+  height: 150px;
+}
+
+ul.reseaux {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.entete-popup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+/*Responsive pages perso*/
+
+@media screen and (max-width: 1024px) {
+  /*à changer individuellement - zoom photo*/
+.photosPages.lienKevin {
+  height: 20vh;
+  width: 20vh;
+}
+.photosPages {
+  height: 15vh;
+  width: 15vh;
+}
+
+@media screen and (max-width: 968px) {
+
+/*Ajout du blocContainer*/
+.blocContainer {  
+  display: block;
+  flex-wrap: wrap;
+}
+
+.photosBandeau {
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3em;
+}
+
+.photosIndiv {
+  height: 8vh;
+  width: 8vh;
+}
+/*à changer individuellement*/
+.photosPages.lienKevin {
+  height: 12vh;
+  width: 12vh;
+}
+/*Changement de la taille photosPages*/
+.photosPages {
+  height: 10vh;
+  width: 10vh;
+}
+
+header {
+  height: 50vh;
+}
+/*Ajout de la balise h1*/
+h1 {
+  text-align: center; 
+  font-size: xx-large;
+  text-align: auto;
+}
+}
+
+@media screen and (max-width: 568px) {
+
+/*Ajout du blocContainer*/
+.blocContainer {
+  display: flex;
+  flex-flow: column;
+  width: auto;
+  height: auto;
+  margin-top: 20px;
+}
+/*Ajout de la balise h1*/
+h1 {
+  text-align: center;
+  font-size: large;
+  text-align: auto;
+}
+
+.container-presentation {
+  display: block;
+  text-align: center;
+}
+
+.photosBandeau {
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 3em;
+}
+
+.photosIndiv {
+  height: 12vh;
+  width: 12vh;
+}
+
+/*à changer individuellement*/
+.photosPages.lienKevin {
+height: 8vh;
+width: 8vh;
+}
+
+.photosPages {
+  height: 6vh;
+  width: 6vh;
+}
+
+.section-icone {
+  display: block;
+  text-align: center;
+}
+
+.picturesBigk {
+  float: none;
 }
 
 .haut-de-page {
-    font-size: 30px !important;
-    
+  font-size: 30px !important;
 }
-
 
