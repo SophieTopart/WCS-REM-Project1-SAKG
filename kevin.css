@@ -72,6 +72,7 @@ h1 {
 .photosBandeau {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding-left: 3em;
     padding-right: 3em;
     padding-top: 3em;
