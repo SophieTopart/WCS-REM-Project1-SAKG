@@ -6,13 +6,13 @@ body {
     display: block;
 }
 
-.lienAline {
-    height: 20vh;
+.photosPages{
+    height: 15vh;
     border-radius: 50%;
 }
 
-.photosPages{
-    height: 15vh;
+.lienAline {
+    height: 20vh;
     border-radius: 50%;
 }
 
@@ -357,11 +357,6 @@ ul.reseaux {
 
 .grow {
     flex-grow: 1;
-}
-
-.lienAline {
-    height: 15vh;
-    border-radius: 50%;
 }
 
 .titre-portfolio-aline {
