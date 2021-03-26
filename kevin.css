@@ -105,7 +105,7 @@ ul li {
     border-radius: 50%;
 }
 
-.lienSophie {
+.lienKevin {
     height: 20vh;
     border-radius: 50%;
 }
@@ -422,7 +422,7 @@ ul.reseaux {
 
 @media screen and (max-width: 1024px) {
   /*à changer individuellement - zoom photo*/
-.photosPages.lienSophie {
+.photosPages.lienKevin {
   height: 20vh;
   width: 20vh;
 }
