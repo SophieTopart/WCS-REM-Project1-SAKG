@@ -6,8 +6,13 @@ body {
     display: block;
 }
 
-.photosPages .lienAline {
+.lienAline {
     height: 20vh;
+    border-radius: 50%;
+}
+
+.photosPages{
+    height: 15vh;
     border-radius: 50%;
 }
 
