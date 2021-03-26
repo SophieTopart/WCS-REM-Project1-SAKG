@@ -151,6 +151,7 @@ ul li {
 #logoPlus:hover {
   transform: skew(10deg);
   color:cornflowerblue;
+  cursor: pointer;
 }
 
 .modal {
@@ -210,6 +211,7 @@ ul li {
     display: block;
     background-color: rgb(255, 255, 255);
     opacity: 1;
+    cursor: pointer;
 }
 
 .elementPhoto * {
