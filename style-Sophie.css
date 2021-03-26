@@ -9,16 +9,29 @@
 }
 
 .dark-mode-modal {
-    background-color: lightgrey;
+    background-color: #d3d3d3;
     color: black;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
 }
 
-.entete-popup-dark {
-  color: black;
+ul.reseaux {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.entete-popup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .popup-formulaire-dark {
@@ -28,6 +41,18 @@
   padding: 20px;
   width: 600px;
   height: 440px;
+}
+
+.btn {
+    background-color: lightgrey;
+    font-size: 16px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: rgb(46, 40, 40);
+  color: white;
 }
 
 /* Body */
@@ -76,6 +101,7 @@ h1 {
 
 body {
     font-family: 'Raleway', sans-serif;
+    display: block;
 }
 
 .flex-container {
@@ -87,6 +113,16 @@ body {
 
 ul li {
     display: inline-block;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.entete-popup h2{
+  color: black;
 }
 
 /* Corps page perso */
@@ -144,6 +180,7 @@ ul li {
 }
 
 #logoPlus:hover {
+  cursor: pointer;
   transform: skew(10deg);
   color:cornflowerblue;
 }
@@ -203,7 +240,7 @@ ul li {
 
 .elementPhoto:hover{
     display: block;
-    background-color: rgb(0, 238, 255);
+    background-color: purple;
     opacity: 1;
 }
 
@@ -379,13 +416,13 @@ ul li {
   flex-direction: column;
   background-color: white;
   padding: 20px;
-  width: 600px;
-  height: 440px;
+  width: 500px;
+  height: 396px;
 }
 
 .champ-formulaire {
   width: 100%;
-  margin-top: 3vh;
+  margin-top: 24px;
 }
 
 .zone-textarea {

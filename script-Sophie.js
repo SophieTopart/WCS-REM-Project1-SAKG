@@ -43,13 +43,7 @@ function darkMode() {
     const element = document.body;
     element.classList.toggle("dark-mode");
     const modalContent = document.getElementById("modalContent");
-    modalContent.classList.remove("modalContent");
     modalContent.classList.toggle("dark-mode-modal");
-    const entetePopup = document.getElementById("entete-popup");
-    entetePopup.classList.add("entete-popup-dark") 
-    const popup = document.getElementById("popup-formulaire");
-    popup.classList.remove("popup-formulaire");
-    popup.classList.add("popup-formulaire-dark");
 }
 
 /* Formulaire */
@@ -69,3 +63,21 @@ boutonFermetureFormulaire.addEventListener("click", () => {
     popup.classList.toggle("affichage-popup");
 })
 
+//gestion du bouton envoyer
+const boutonEnvoyer = document.querySelector("#formulaire-contact");
+const messageNom = document.querySelector("#message-nom");
+const messageEmail = document.querySelector("#message-email");
+const messageContenu = document.querySelector("#message-contenu");
+
+boutonEnvoyer.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    messageNom.value = "";
+    messageEmail.value = "";
+    messageContenu.value = "";
+
+    alert("Votre message a bien été envoyé");
+
+    popup.classList.toggle("affichage-popup");
+
+})
