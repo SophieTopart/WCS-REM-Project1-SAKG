@@ -1,3 +1,5 @@
+![plot](./Assets/AKGS.png)
+
 # WCS-REM-Project1-SAKG
 Premier projet de groupe réalisé dans le cadre de la formation développement web et mobile de la Wild Code School.
 
